@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0ddf6da82cf00ec8c400a7779922e5ac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0ddf6da82cf00ec8c400a7779922e5ac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0ddf6da82cf00ec8c400a7779922e5ac = L.map(
+                "map_0ddf6da82cf00ec8c400a7779922e5ac",
+                {
+                    center: [49.319904414999996, 26.894499870000004],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5081cceaa4ec7b5bc83e722e2076b1e6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5081cceaa4ec7b5bc83e722e2076b1e6.addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var marker_a19bbab4b81faa70170592b19277ce7e = L.marker(
+                [49.4313607, 27.0095766],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_31b057fd6140ff3fad839ae4fa546cc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_001774b8619c852bf0d1f3d49fb83bae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93321a0879cfecc9b3dab8b025b6d21c = $(`<div id="html_93321a0879cfecc9b3dab8b025b6d21c" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> ОККО (Хмельницький)<br><b>Адреса:</b> ОККО, 20, Старокостянтинівське шосе, Мрія ЖК, Виставка, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29015, Україна</div>`)[0];
+                popup_001774b8619c852bf0d1f3d49fb83bae.setContent(html_93321a0879cfecc9b3dab8b025b6d21c);
+            
+        
+
+        marker_a19bbab4b81faa70170592b19277ce7e.bindPopup(popup_001774b8619c852bf0d1f3d49fb83bae)
+        ;
+
+        
+    
+    
+            marker_a19bbab4b81faa70170592b19277ce7e.bindTooltip(
+                `<div>
+                     ОККО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a19bbab4b81faa70170592b19277ce7e.setIcon(icon_31b057fd6140ff3fad839ae4fa546cc8);
+            
+    
+            var marker_143f6e3d5c8418d79de678a0e33856e6 = L.marker(
+                [49.4405341, 26.9991443],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_fbe55d3945e007182622f460e994e8f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da2219a5873b03a1ac0cd95bca09c109 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_870ab57550159f9130e56670f4e5328e = $(`<div id="html_870ab57550159f9130e56670f4e5328e" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> ОККО (Хмельницький)<br><b>Адреса:</b> ОККО, проспект Миру, Естетика ЖК, Виставка, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29017, Україна</div>`)[0];
+                popup_da2219a5873b03a1ac0cd95bca09c109.setContent(html_870ab57550159f9130e56670f4e5328e);
+            
+        
+
+        marker_143f6e3d5c8418d79de678a0e33856e6.bindPopup(popup_da2219a5873b03a1ac0cd95bca09c109)
+        ;
+
+        
+    
+    
+            marker_143f6e3d5c8418d79de678a0e33856e6.bindTooltip(
+                `<div>
+                     ОККО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_143f6e3d5c8418d79de678a0e33856e6.setIcon(icon_fbe55d3945e007182622f460e994e8f4);
+            
+    
+            var marker_34c4a5b52343cf50c8a692331bd02e0f = L.marker(
+                [49.4144555, 26.9468544],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_2d610fff182c0cf0dcc02ce7fc46cdda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ac996af3b97b755673faf5267a49ece = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fe81d9312973a3a8e18305c3f411bf3 = $(`<div id="html_3fe81d9312973a3a8e18305c3f411bf3" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> ОККО (Хмельницький)<br><b>Адреса:</b> ОККО, Львівське шосе, Західний квартал, Південно-Західний, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29016, Україна</div>`)[0];
+                popup_0ac996af3b97b755673faf5267a49ece.setContent(html_3fe81d9312973a3a8e18305c3f411bf3);
+            
+        
+
+        marker_34c4a5b52343cf50c8a692331bd02e0f.bindPopup(popup_0ac996af3b97b755673faf5267a49ece)
+        ;
+
+        
+    
+    
+            marker_34c4a5b52343cf50c8a692331bd02e0f.bindTooltip(
+                `<div>
+                     ОККО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_34c4a5b52343cf50c8a692331bd02e0f.setIcon(icon_2d610fff182c0cf0dcc02ce7fc46cdda);
+            
+    
+            var marker_4381eb1c860e5bac31a337111fc5fbd8 = L.marker(
+                [49.4470815, 27.0006503],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_0c62144b38e209789d7b757ab34a0edc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f6eaaf63d78c0b91e291057c293a7ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d9bd97c9208138207191879c5042967 = $(`<div id="html_7d9bd97c9208138207191879c5042967" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> ОККО (Хмельницький)<br><b>Адреса:</b> ОККО, Озерна вулиця, Приозерний ЖК, Озерна, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29027, Україна</div>`)[0];
+                popup_1f6eaaf63d78c0b91e291057c293a7ec.setContent(html_7d9bd97c9208138207191879c5042967);
+            
+        
+
+        marker_4381eb1c860e5bac31a337111fc5fbd8.bindPopup(popup_1f6eaaf63d78c0b91e291057c293a7ec)
+        ;
+
+        
+    
+    
+            marker_4381eb1c860e5bac31a337111fc5fbd8.bindTooltip(
+                `<div>
+                     ОККО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4381eb1c860e5bac31a337111fc5fbd8.setIcon(icon_0c62144b38e209789d7b757ab34a0edc);
+            
+    
+            var marker_4d8a42c6f449ceda7d64ef5621f3935a = L.marker(
+                [49.4317925, 27.0230131],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_b8693c29228c31b5ec5b0b3b5e146a58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6bb6de9d2de45d841778d927ceca10a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fac5f5d6edb47c178da3c91a82d2977 = $(`<div id="html_3fac5f5d6edb47c178da3c91a82d2977" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> ОККО (Хмельницький)<br><b>Адреса:</b> ОККО, 102/1, проспект Миру, Мрія ЖК, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29015, Україна</div>`)[0];
+                popup_6bb6de9d2de45d841778d927ceca10a6.setContent(html_3fac5f5d6edb47c178da3c91a82d2977);
+            
+        
+
+        marker_4d8a42c6f449ceda7d64ef5621f3935a.bindPopup(popup_6bb6de9d2de45d841778d927ceca10a6)
+        ;
+
+        
+    
+    
+            marker_4d8a42c6f449ceda7d64ef5621f3935a.bindTooltip(
+                `<div>
+                     ОККО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d8a42c6f449ceda7d64ef5621f3935a.setIcon(icon_b8693c29228c31b5ec5b0b3b5e146a58);
+            
+    
+            var marker_88e42231a0610c47c88ba27a00d6890b = L.marker(
+                [49.4306473, 26.9871292],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_a92e5594c30691abec2afb8d235dda2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8699d03906fedbee37701fd94e118bac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a67ef696ac59692e45eaaa0bb2488b5b = $(`<div id="html_a67ef696ac59692e45eaaa0bb2488b5b" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> ОККО (Хмельницький)<br><b>Адреса:</b> ОККО, Прибузька вулиця, Набережний квартал, Поділ, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29000, Україна</div>`)[0];
+                popup_8699d03906fedbee37701fd94e118bac.setContent(html_a67ef696ac59692e45eaaa0bb2488b5b);
+            
+        
+
+        marker_88e42231a0610c47c88ba27a00d6890b.bindPopup(popup_8699d03906fedbee37701fd94e118bac)
+        ;
+
+        
+    
+    
+            marker_88e42231a0610c47c88ba27a00d6890b.bindTooltip(
+                `<div>
+                     ОККО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_88e42231a0610c47c88ba27a00d6890b.setIcon(icon_a92e5594c30691abec2afb8d235dda2d);
+            
+    
+            var marker_168467dcf545206d491e1b6c1b0bd308 = L.marker(
+                [49.4072038, 26.9996104],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_d176a361d4d8306a38af3c5a00d6cb21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4735ca7d4ddd821039d3721a0fa998c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91018cf68de17c958dc402fb77afa5a0 = $(`<div id="html_91018cf68de17c958dc402fb77afa5a0" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> ОККО (Хмельницький)<br><b>Адреса:</b> ОККО, вулиця Гетьмана Мазепи, Avila Sky ЖК, Старий Аеродром, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29009, Україна</div>`)[0];
+                popup_d4735ca7d4ddd821039d3721a0fa998c.setContent(html_91018cf68de17c958dc402fb77afa5a0);
+            
+        
+
+        marker_168467dcf545206d491e1b6c1b0bd308.bindPopup(popup_d4735ca7d4ddd821039d3721a0fa998c)
+        ;
+
+        
+    
+    
+            marker_168467dcf545206d491e1b6c1b0bd308.bindTooltip(
+                `<div>
+                     ОККО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_168467dcf545206d491e1b6c1b0bd308.setIcon(icon_d176a361d4d8306a38af3c5a00d6cb21);
+            
+    
+            var marker_f0c990a61190b975985cb93722658e6d = L.marker(
+                [49.4449373, 27.0188689],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_04663e07ea63df32be4ea64973d305a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46f2d0139af13bd4ba9e8e9c5c3c1945 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e63cc1343ad519fa07c6e3ee349751b3 = $(`<div id="html_e63cc1343ad519fa07c6e3ee349751b3" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> WOG (Хмельницький)<br><b>Адреса:</b> WOG, 2/1, Старокостянтинівське шосе, Перший парковий, Озерна, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29027, Україна</div>`)[0];
+                popup_46f2d0139af13bd4ba9e8e9c5c3c1945.setContent(html_e63cc1343ad519fa07c6e3ee349751b3);
+            
+        
+
+        marker_f0c990a61190b975985cb93722658e6d.bindPopup(popup_46f2d0139af13bd4ba9e8e9c5c3c1945)
+        ;
+
+        
+    
+    
+            marker_f0c990a61190b975985cb93722658e6d.bindTooltip(
+                `<div>
+                     WOG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0c990a61190b975985cb93722658e6d.setIcon(icon_04663e07ea63df32be4ea64973d305a5);
+            
+    
+            var marker_fbe4e6b352092f9b468dc97bd2b037fc = L.marker(
+                [49.4288791, 27.0283745],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_69fc1e1b5cfd8c21bffc70843049e1d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4920788c089752a18b0232143c2d99c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81c3c187aa292592927f1471ca0a68aa = $(`<div id="html_81c3c187aa292592927f1471ca0a68aa" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> WOG (Хмельницький)<br><b>Адреса:</b> WOG, Вінницьке шосе, ЖМ Ранковий, Лезневе, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29015, Україна</div>`)[0];
+                popup_f4920788c089752a18b0232143c2d99c.setContent(html_81c3c187aa292592927f1471ca0a68aa);
+            
+        
+
+        marker_fbe4e6b352092f9b468dc97bd2b037fc.bindPopup(popup_f4920788c089752a18b0232143c2d99c)
+        ;
+
+        
+    
+    
+            marker_fbe4e6b352092f9b468dc97bd2b037fc.bindTooltip(
+                `<div>
+                     WOG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbe4e6b352092f9b468dc97bd2b037fc.setIcon(icon_69fc1e1b5cfd8c21bffc70843049e1d8);
+            
+    
+            var marker_f1a765c612a332d24361d1bc3bd3ecde = L.marker(
+                [49.4472738, 26.9566885],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_112b3066cc306a213653b605d6fbad83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81bd7837fb9e307d9d00496b47915da0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d749f3f8c7fd6f713ebee519e84b868 = $(`<div id="html_9d749f3f8c7fd6f713ebee519e84b868" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> WOG (Хмельницький)<br><b>Адреса:</b> WOG, 5/2, Західно-Окружна вулиця, Гречани, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29025, Україна</div>`)[0];
+                popup_81bd7837fb9e307d9d00496b47915da0.setContent(html_9d749f3f8c7fd6f713ebee519e84b868);
+            
+        
+
+        marker_f1a765c612a332d24361d1bc3bd3ecde.bindPopup(popup_81bd7837fb9e307d9d00496b47915da0)
+        ;
+
+        
+    
+    
+            marker_f1a765c612a332d24361d1bc3bd3ecde.bindTooltip(
+                `<div>
+                     WOG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f1a765c612a332d24361d1bc3bd3ecde.setIcon(icon_112b3066cc306a213653b605d6fbad83);
+            
+    
+            var marker_7d4dc4ef99612680fe531a836fa140c7 = L.marker(
+                [49.4507319, 27.0206836],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_372e9c9ea65e6df383968fa4fa897a6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbeaf36225fe9f4f2e630b399d5cc887 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77f4bd44b85c740721d007fc2bbb0fce = $(`<div id="html_77f4bd44b85c740721d007fc2bbb0fce" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> WOG (Хмельницький)<br><b>Адреса:</b> WOG, Старокостянтинівське шосе, Перший парковий, Озерна, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29027, Україна</div>`)[0];
+                popup_dbeaf36225fe9f4f2e630b399d5cc887.setContent(html_77f4bd44b85c740721d007fc2bbb0fce);
+            
+        
+
+        marker_7d4dc4ef99612680fe531a836fa140c7.bindPopup(popup_dbeaf36225fe9f4f2e630b399d5cc887)
+        ;
+
+        
+    
+    
+            marker_7d4dc4ef99612680fe531a836fa140c7.bindTooltip(
+                `<div>
+                     WOG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d4dc4ef99612680fe531a836fa140c7.setIcon(icon_372e9c9ea65e6df383968fa4fa897a6a);
+            
+    
+            var marker_e2b398a6a4011a326fa3500c733521a2 = L.marker(
+                [49.4027072, 26.8763438],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_7966017ec46face8c13ba2ee6ad79d37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e4662e9eec5464c7ad403838c8514c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0f199d80efc57ab5c3a1fd52d0af2bc = $(`<div id="html_f0f199d80efc57ab5c3a1fd52d0af2bc" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> WOG (Хмельницький)<br><b>Адреса:</b> WOG, М-30, Мацьківці, Хмельницька міська громада, Хмельницький район, Хмельницька область, 31336, Україна</div>`)[0];
+                popup_1e4662e9eec5464c7ad403838c8514c3.setContent(html_f0f199d80efc57ab5c3a1fd52d0af2bc);
+            
+        
+
+        marker_e2b398a6a4011a326fa3500c733521a2.bindPopup(popup_1e4662e9eec5464c7ad403838c8514c3)
+        ;
+
+        
+    
+    
+            marker_e2b398a6a4011a326fa3500c733521a2.bindTooltip(
+                `<div>
+                     WOG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e2b398a6a4011a326fa3500c733521a2.setIcon(icon_7966017ec46face8c13ba2ee6ad79d37);
+            
+    
+            var marker_f4994259091038c002db12ad333e73e7 = L.marker(
+                [49.4572955, 26.965927],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_891958d1a3943d654822932fab509698 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2a2a698b766827361757af95bc41d4b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb942562d97ef8c4d71577aaf452dfb9 = $(`<div id="html_bb942562d97ef8c4d71577aaf452dfb9" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> WOG (Хмельницький)<br><b>Адреса:</b> ВОГ, Західно-Окружна вулиця, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29025, Україна</div>`)[0];
+                popup_e2a2a698b766827361757af95bc41d4b.setContent(html_bb942562d97ef8c4d71577aaf452dfb9);
+            
+        
+
+        marker_f4994259091038c002db12ad333e73e7.bindPopup(popup_e2a2a698b766827361757af95bc41d4b)
+        ;
+
+        
+    
+    
+            marker_f4994259091038c002db12ad333e73e7.bindTooltip(
+                `<div>
+                     WOG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4994259091038c002db12ad333e73e7.setIcon(icon_891958d1a3943d654822932fab509698);
+            
+    
+            var marker_0c03d96e138e8509d1e46cf702b313e6 = L.marker(
+                [49.4223549, 27.0130099],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_7f069a657e0eec6a919d7259df00e1a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c494bd3220110e65253e13be0a6ed02e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3245b2535bdb4b1e6fa06394a359c19a = $(`<div id="html_3245b2535bdb4b1e6fa06394a359c19a" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> UPG (Хмельницький)<br><b>Адреса:</b> UPG, 11/3, Прибузька вулиця, План, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29010, Україна</div>`)[0];
+                popup_c494bd3220110e65253e13be0a6ed02e.setContent(html_3245b2535bdb4b1e6fa06394a359c19a);
+            
+        
+
+        marker_0c03d96e138e8509d1e46cf702b313e6.bindPopup(popup_c494bd3220110e65253e13be0a6ed02e)
+        ;
+
+        
+    
+    
+            marker_0c03d96e138e8509d1e46cf702b313e6.bindTooltip(
+                `<div>
+                     UPG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c03d96e138e8509d1e46cf702b313e6.setIcon(icon_7f069a657e0eec6a919d7259df00e1a8);
+            
+    
+            var marker_e3cfc3a7cb158a6f2c958fa4b2b76768 = L.marker(
+                [49.4246846, 27.0228893],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_e961c794508a0b886ab86958a63eae42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a3b7febc586eed2a10b7f8276e689bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5fe1b6f5ef95406e1a83ae55b785eb7 = $(`<div id="html_f5fe1b6f5ef95406e1a83ae55b785eb7" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Shell (Хмельницький)<br><b>Адреса:</b> Shell, 11, Трудова вулиця, ЖМ Ранкове, Заводський, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29015, Україна</div>`)[0];
+                popup_7a3b7febc586eed2a10b7f8276e689bc.setContent(html_f5fe1b6f5ef95406e1a83ae55b785eb7);
+            
+        
+
+        marker_e3cfc3a7cb158a6f2c958fa4b2b76768.bindPopup(popup_7a3b7febc586eed2a10b7f8276e689bc)
+        ;
+
+        
+    
+    
+            marker_e3cfc3a7cb158a6f2c958fa4b2b76768.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e3cfc3a7cb158a6f2c958fa4b2b76768.setIcon(icon_e961c794508a0b886ab86958a63eae42);
+            
+    
+            var marker_68866ba876a3b5eb0915cc37c9d4fef7 = L.marker(
+                [49.4135228, 26.9392611],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_07156e09447581c5fe980221d76c6224 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bd35cb7c48048d2430218e59b9fcb77 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_273218795e9cf465f5b6a514e6211212 = $(`<div id="html_273218795e9cf465f5b6a514e6211212" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Shell (Хмельницький)<br><b>Адреса:</b> Shell, Західно-Окружна вулиця, Західний квартал, Південно-Західний, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29018, Україна</div>`)[0];
+                popup_7bd35cb7c48048d2430218e59b9fcb77.setContent(html_273218795e9cf465f5b6a514e6211212);
+            
+        
+
+        marker_68866ba876a3b5eb0915cc37c9d4fef7.bindPopup(popup_7bd35cb7c48048d2430218e59b9fcb77)
+        ;
+
+        
+    
+    
+            marker_68866ba876a3b5eb0915cc37c9d4fef7.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_68866ba876a3b5eb0915cc37c9d4fef7.setIcon(icon_07156e09447581c5fe980221d76c6224);
+            
+    
+            var marker_b9886c2d4b1ea62b38b49509977294a9 = L.marker(
+                [49.4097767, 27.0023868],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_78506802339533248cac4957d8c489a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_790e706e783f686c61fee65bdac014c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58edf78b1e69ac26c509baecc9b0f2dc = $(`<div id="html_58edf78b1e69ac26c509baecc9b0f2dc" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Shell (Хмельницький)<br><b>Адреса:</b> Shell, вулиця Гетьмана Мазепи, Avila Sky ЖК, Старий Аеродром, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29009, Україна</div>`)[0];
+                popup_790e706e783f686c61fee65bdac014c1.setContent(html_58edf78b1e69ac26c509baecc9b0f2dc);
+            
+        
+
+        marker_b9886c2d4b1ea62b38b49509977294a9.bindPopup(popup_790e706e783f686c61fee65bdac014c1)
+        ;
+
+        
+    
+    
+            marker_b9886c2d4b1ea62b38b49509977294a9.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b9886c2d4b1ea62b38b49509977294a9.setIcon(icon_78506802339533248cac4957d8c489a3);
+            
+    
+            var marker_6b2dcd4a5f83ca52bdc7139c7870bc17 = L.marker(
+                [49.4485079, 26.9782689],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_370fb26f88c265bed255a5ada12eee67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ced7dcf4d5272e6431eeb988bb1f4a26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6ebff1503115fef2317aa0e34a9e056 = $(`<div id="html_f6ebff1503115fef2317aa0e34a9e056" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> БРСМ-Нафта (Хмельницький)<br><b>Адреса:</b> БРСМ-Нафта, проспект Миру, Естетика ЖК, Заріччя, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29019, Україна</div>`)[0];
+                popup_ced7dcf4d5272e6431eeb988bb1f4a26.setContent(html_f6ebff1503115fef2317aa0e34a9e056);
+            
+        
+
+        marker_6b2dcd4a5f83ca52bdc7139c7870bc17.bindPopup(popup_ced7dcf4d5272e6431eeb988bb1f4a26)
+        ;
+
+        
+    
+    
+            marker_6b2dcd4a5f83ca52bdc7139c7870bc17.bindTooltip(
+                `<div>
+                     БРСМ-Нафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6b2dcd4a5f83ca52bdc7139c7870bc17.setIcon(icon_370fb26f88c265bed255a5ada12eee67);
+            
+    
+            var marker_84a688c8e28c951e5fe03d418a5b883e = L.marker(
+                [49.4269838, 27.0247113],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_c353f8d027f3d1b8b58e344efd0358bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd00532f0e1fca934160b5644f4c93ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1eedb2b454d32b6ecaed3c4555982ed = $(`<div id="html_d1eedb2b454d32b6ecaed3c4555982ed" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> БРСМ-Нафта (Хмельницький)<br><b>Адреса:</b> БРСМ-Нафта, 9/3г, Трудова вулиця, ЖМ Ранкове, Заводський, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29015, Україна</div>`)[0];
+                popup_dd00532f0e1fca934160b5644f4c93ad.setContent(html_d1eedb2b454d32b6ecaed3c4555982ed);
+            
+        
+
+        marker_84a688c8e28c951e5fe03d418a5b883e.bindPopup(popup_dd00532f0e1fca934160b5644f4c93ad)
+        ;
+
+        
+    
+    
+            marker_84a688c8e28c951e5fe03d418a5b883e.bindTooltip(
+                `<div>
+                     БРСМ-Нафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_84a688c8e28c951e5fe03d418a5b883e.setIcon(icon_c353f8d027f3d1b8b58e344efd0358bc);
+            
+    
+            var marker_653e8988450d7c39d582552f380f3577 = L.marker(
+                [49.4433677, 27.0024211],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_1d43e38a0965c293cbdd048f5ceea899 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef82fb057cfc1470d4d399c4be47e011 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d90408ddfa40cab3d4e83ee51a32081b = $(`<div id="html_d90408ddfa40cab3d4e83ee51a32081b" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> БРСМ-Нафта (Хмельницький)<br><b>Адреса:</b> БРСМ-Нафта, 7, вулиця Панаса Мирного, Рів’єра ЖК, Виставка, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29017, Україна</div>`)[0];
+                popup_ef82fb057cfc1470d4d399c4be47e011.setContent(html_d90408ddfa40cab3d4e83ee51a32081b);
+            
+        
+
+        marker_653e8988450d7c39d582552f380f3577.bindPopup(popup_ef82fb057cfc1470d4d399c4be47e011)
+        ;
+
+        
+    
+    
+            marker_653e8988450d7c39d582552f380f3577.bindTooltip(
+                `<div>
+                     БРСМ-Нафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_653e8988450d7c39d582552f380f3577.setIcon(icon_1d43e38a0965c293cbdd048f5ceea899);
+            
+    
+            var marker_01d006072bb80b3914a53aacbe1688db = L.marker(
+                [49.4583168, 26.9579263],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_b08a1a0360355a16ea35168229ff3206 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6af8b20cbf0aa9d64d555bdd7c691bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_caf9829a7965e28c60b7c0385ceee48b = $(`<div id="html_caf9829a7965e28c60b7c0385ceee48b" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Avantage 7 (Хмельницький)<br><b>Адреса:</b> Avantage 7, Західно-Окружна вулиця, Гречани, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29025, Україна</div>`)[0];
+                popup_b6af8b20cbf0aa9d64d555bdd7c691bb.setContent(html_caf9829a7965e28c60b7c0385ceee48b);
+            
+        
+
+        marker_01d006072bb80b3914a53aacbe1688db.bindPopup(popup_b6af8b20cbf0aa9d64d555bdd7c691bb)
+        ;
+
+        
+    
+    
+            marker_01d006072bb80b3914a53aacbe1688db.bindTooltip(
+                `<div>
+                     Avantage 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01d006072bb80b3914a53aacbe1688db.setIcon(icon_b08a1a0360355a16ea35168229ff3206);
+            
+    
+            var marker_a79de3f93d67acaa3c366fcfd1d38339 = L.marker(
+                [49.40152, 27.1192611],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_d6ca7730f859353cbf2c2ae6c4b01949 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34a45736b22c338413428961ba23be9f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70ef5f0e12fbab9f19cb417425100389 = $(`<div id="html_70ef5f0e12fbab9f19cb417425100389" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Avantage 7 (Хмельницький)<br><b>Адреса:</b> Avantage 7, М-30, Прибузьке, Хмельницька міська громада, Хмельницький район, Хмельницька область, 31343, Україна</div>`)[0];
+                popup_34a45736b22c338413428961ba23be9f.setContent(html_70ef5f0e12fbab9f19cb417425100389);
+            
+        
+
+        marker_a79de3f93d67acaa3c366fcfd1d38339.bindPopup(popup_34a45736b22c338413428961ba23be9f)
+        ;
+
+        
+    
+    
+            marker_a79de3f93d67acaa3c366fcfd1d38339.bindTooltip(
+                `<div>
+                     Avantage 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a79de3f93d67acaa3c366fcfd1d38339.setIcon(icon_d6ca7730f859353cbf2c2ae6c4b01949);
+            
+    
+            var marker_e471e6a3221ffc493fa61c509e4637a6 = L.marker(
+                [49.4273253, 27.0237651],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_22b46af494485bce32aca146d9a9b6c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5aecc75867aad3192483411311cee33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5bb4d7e6fcaf7bf13928106b8e69503a = $(`<div id="html_5bb4d7e6fcaf7bf13928106b8e69503a" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Укрнафта (Хмельницький)<br><b>Адреса:</b> Укрнафта, Трудова вулиця, ЖМ Ранкове, Заводський, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29015, Україна</div>`)[0];
+                popup_f5aecc75867aad3192483411311cee33.setContent(html_5bb4d7e6fcaf7bf13928106b8e69503a);
+            
+        
+
+        marker_e471e6a3221ffc493fa61c509e4637a6.bindPopup(popup_f5aecc75867aad3192483411311cee33)
+        ;
+
+        
+    
+    
+            marker_e471e6a3221ffc493fa61c509e4637a6.bindTooltip(
+                `<div>
+                     Укрнафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e471e6a3221ffc493fa61c509e4637a6.setIcon(icon_22b46af494485bce32aca146d9a9b6c3);
+            
+    
+            var marker_95f809bb239991c782633257cf183500 = L.marker(
+                [49.400798, 26.9599428],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_0abcb3f27f9ff56942ac1d7731c39dd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_261d597de0380df69be17937ef7f631d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a44c2cd227badb76d21a03463e4b397a = $(`<div id="html_a44c2cd227badb76d21a03463e4b397a" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Укрнафта (Хмельницький)<br><b>Адреса:</b> Укрнафта, 130, Камʼянецька вулиця, Ружична, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29021, Україна</div>`)[0];
+                popup_261d597de0380df69be17937ef7f631d.setContent(html_a44c2cd227badb76d21a03463e4b397a);
+            
+        
+
+        marker_95f809bb239991c782633257cf183500.bindPopup(popup_261d597de0380df69be17937ef7f631d)
+        ;
+
+        
+    
+    
+            marker_95f809bb239991c782633257cf183500.bindTooltip(
+                `<div>
+                     Укрнафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_95f809bb239991c782633257cf183500.setIcon(icon_0abcb3f27f9ff56942ac1d7731c39dd2);
+            
+    
+            var marker_db39acc3cfa63ca894c2be0c6143a610 = L.marker(
+                [49.4076556, 27.0140156],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_83d886f732cb59be97c6f8e76e319e6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d42230f6bc3b80b3184772347a1f24af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c4078ea1e103a0269891f2aa7f26453 = $(`<div id="html_9c4078ea1e103a0269891f2aa7f26453" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Укрнафта (Хмельницький)<br><b>Адреса:</b> Укрнафта, 12, Пілотська вулиця, План, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29010, Україна</div>`)[0];
+                popup_d42230f6bc3b80b3184772347a1f24af.setContent(html_9c4078ea1e103a0269891f2aa7f26453);
+            
+        
+
+        marker_db39acc3cfa63ca894c2be0c6143a610.bindPopup(popup_d42230f6bc3b80b3184772347a1f24af)
+        ;
+
+        
+    
+    
+            marker_db39acc3cfa63ca894c2be0c6143a610.bindTooltip(
+                `<div>
+                     Укрнафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db39acc3cfa63ca894c2be0c6143a610.setIcon(icon_83d886f732cb59be97c6f8e76e319e6a);
+            
+    
+            var marker_3db6717b527bf6f2ae56e3dc6de89d87 = L.marker(
+                [49.4134024, 26.9381735],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_b583ddd54df99fa7a9e89d6b9592bc06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b5cad02c60ad0a43930fe9b4098ea28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a37f01f4d355a5899945268f2b9d204 = $(`<div id="html_2a37f01f4d355a5899945268f2b9d204" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Укрнафта (Хмельницький)<br><b>Адреса:</b> Укрнафта, 38/1, Львівське шосе, Західний квартал, Південно-Західний, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29018, Україна</div>`)[0];
+                popup_7b5cad02c60ad0a43930fe9b4098ea28.setContent(html_2a37f01f4d355a5899945268f2b9d204);
+            
+        
+
+        marker_3db6717b527bf6f2ae56e3dc6de89d87.bindPopup(popup_7b5cad02c60ad0a43930fe9b4098ea28)
+        ;
+
+        
+    
+    
+            marker_3db6717b527bf6f2ae56e3dc6de89d87.bindTooltip(
+                `<div>
+                     Укрнафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3db6717b527bf6f2ae56e3dc6de89d87.setIcon(icon_b583ddd54df99fa7a9e89d6b9592bc06);
+            
+    
+            var marker_f4a6e53398b35ce3b1372c326d22036a = L.marker(
+                [49.4030505, 26.9939789],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_28feea5cb08657f5ca510b43f89af25d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47aece827cbfd6d19a21397ead7c86fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea1e3e0a8faddca4699d4f804d89b212 = $(`<div id="html_ea1e3e0a8faddca4699d4f804d89b212" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Укрнафта (Хмельницький)<br><b>Адреса:</b> Укрнафта, 54/7, вулиця Петлюри, Avila Sky ЖК, Дубове, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29009, Україна</div>`)[0];
+                popup_47aece827cbfd6d19a21397ead7c86fe.setContent(html_ea1e3e0a8faddca4699d4f804d89b212);
+            
+        
+
+        marker_f4a6e53398b35ce3b1372c326d22036a.bindPopup(popup_47aece827cbfd6d19a21397ead7c86fe)
+        ;
+
+        
+    
+    
+            marker_f4a6e53398b35ce3b1372c326d22036a.bindTooltip(
+                `<div>
+                     Укрнафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4a6e53398b35ce3b1372c326d22036a.setIcon(icon_28feea5cb08657f5ca510b43f89af25d);
+            
+    
+            var marker_162f2f7ee0829deb194215384fe3f141 = L.marker(
+                [49.4208644, 27.0175836],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_23a2bd4ab2f53f7e8f46bff54df37cda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_438e00958dee04e38e4894dc9eeb5a64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4485e818896e39b3c06d5b8a42a12dec = $(`<div id="html_4485e818896e39b3c06d5b8a42a12dec" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Укрнафта (Хмельницький)<br><b>Адреса:</b> Укрнафта, Прибузька вулиця, ЖМ Ранкове, План, Хмельницький, Хмельницька міська громада, Хмельницький район, Хмельницька область, 29010, Україна</div>`)[0];
+                popup_438e00958dee04e38e4894dc9eeb5a64.setContent(html_4485e818896e39b3c06d5b8a42a12dec);
+            
+        
+
+        marker_162f2f7ee0829deb194215384fe3f141.bindPopup(popup_438e00958dee04e38e4894dc9eeb5a64)
+        ;
+
+        
+    
+    
+            marker_162f2f7ee0829deb194215384fe3f141.bindTooltip(
+                `<div>
+                     Укрнафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_162f2f7ee0829deb194215384fe3f141.setIcon(icon_23a2bd4ab2f53f7e8f46bff54df37cda);
+            
+    
+            var marker_941907c87ecdd77ab31ff5ee1adafdd6 = L.marker(
+                [48.6989738, 26.5905342],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_f46e80041fab787b3b0aefa7f208b21a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_305a335a09a6ea4550f8b9bd758f4c23 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40e3683bb737708d7f17a63fb16e91e2 = $(`<div id="html_40e3683bb737708d7f17a63fb16e91e2" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> ОККО (Кам'янець-Подільський)<br><b>Адреса:</b> ОККО, 2Б, проспект Грушевського, Черьомушки, Кам’янець-Подільський, Кам'янець-Подільська міська громада, Кам’янець-Подільський район, Хмельницька область, 32320, Україна</div>`)[0];
+                popup_305a335a09a6ea4550f8b9bd758f4c23.setContent(html_40e3683bb737708d7f17a63fb16e91e2);
+            
+        
+
+        marker_941907c87ecdd77ab31ff5ee1adafdd6.bindPopup(popup_305a335a09a6ea4550f8b9bd758f4c23)
+        ;
+
+        
+    
+    
+            marker_941907c87ecdd77ab31ff5ee1adafdd6.bindTooltip(
+                `<div>
+                     ОККО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_941907c87ecdd77ab31ff5ee1adafdd6.setIcon(icon_f46e80041fab787b3b0aefa7f208b21a);
+            
+    
+            var marker_02724ab16e902bf291f773a47d7335e8 = L.marker(
+                [48.6979338, 26.5778302],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_21f4c73655e3a138e12b5b3592069c8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16f8c14e20652a0dafb6bff06a51b52a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6905f4ac5b34addd400edff600548186 = $(`<div id="html_6905f4ac5b34addd400edff600548186" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> ОККО (Кам'янець-Подільський)<br><b>Адреса:</b> ОККО, вулиця Героїв Маріуполя, Родинний масив, Біланівка, Кам’янець-Подільський, Кам'янець-Подільська міська громада, Кам’янець-Подільський район, Хмельницька область, 32315, Україна</div>`)[0];
+                popup_16f8c14e20652a0dafb6bff06a51b52a.setContent(html_6905f4ac5b34addd400edff600548186);
+            
+        
+
+        marker_02724ab16e902bf291f773a47d7335e8.bindPopup(popup_16f8c14e20652a0dafb6bff06a51b52a)
+        ;
+
+        
+    
+    
+            marker_02724ab16e902bf291f773a47d7335e8.bindTooltip(
+                `<div>
+                     ОККО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02724ab16e902bf291f773a47d7335e8.setIcon(icon_21f4c73655e3a138e12b5b3592069c8a);
+            
+    
+            var marker_e0c808020437026f387cef75d457ca56 = L.marker(
+                [48.7226807, 26.6007469],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_50ba8df5129d7a5047af52fd2a845bcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_043c8b0501b0cab290b19b88753fe0a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0111a2719a6ca6d776e10bfa30e23593 = $(`<div id="html_0111a2719a6ca6d776e10bfa30e23593" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> WOG (Кам'янець-Подільський)<br><b>Адреса:</b> WOG, Хмельницьке шосе, Селище Першотравневе, Кам’янець-Подільський, Кам'янець-Подільська міська громада, Кам’янець-Подільський район, Хмельницька область, 32325, Україна</div>`)[0];
+                popup_043c8b0501b0cab290b19b88753fe0a7.setContent(html_0111a2719a6ca6d776e10bfa30e23593);
+            
+        
+
+        marker_e0c808020437026f387cef75d457ca56.bindPopup(popup_043c8b0501b0cab290b19b88753fe0a7)
+        ;
+
+        
+    
+    
+            marker_e0c808020437026f387cef75d457ca56.bindTooltip(
+                `<div>
+                     WOG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e0c808020437026f387cef75d457ca56.setIcon(icon_50ba8df5129d7a5047af52fd2a845bcc);
+            
+    
+            var marker_f4ad48de6cd725f3a6244d548c538f51 = L.marker(
+                [48.7063663, 26.5904167],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_6605cde2719b574f8671daad2694e91a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5631dd21c87ddb638492aabfcb1e030f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be5707b70c7e8296d18f8b1819242a87 = $(`<div id="html_be5707b70c7e8296d18f8b1819242a87" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> UPG (Кам'янець-Подільський)<br><b>Адреса:</b> UPG, 11В, проспект Грушевського, Кам’янець-Подільський, Кам'янець-Подільська міська громада, Кам’янець-Подільський район, Хмельницька область, 32320, Україна</div>`)[0];
+                popup_5631dd21c87ddb638492aabfcb1e030f.setContent(html_be5707b70c7e8296d18f8b1819242a87);
+            
+        
+
+        marker_f4ad48de6cd725f3a6244d548c538f51.bindPopup(popup_5631dd21c87ddb638492aabfcb1e030f)
+        ;
+
+        
+    
+    
+            marker_f4ad48de6cd725f3a6244d548c538f51.bindTooltip(
+                `<div>
+                     UPG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4ad48de6cd725f3a6244d548c538f51.setIcon(icon_6605cde2719b574f8671daad2694e91a);
+            
+    
+            var marker_6d6107701728ef8879adc210eb1ba8c8 = L.marker(
+                [48.6574561, 26.5395985],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_4d6afd91174f9067d114be2bb0f3767f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_955f32dd907e7239f491933536616b40 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8c9a9c59ddbd8e79e4f77e36861ce29 = $(`<div id="html_d8c9a9c59ddbd8e79e4f77e36861ce29" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Shell (Кам'янець-Подільський)<br><b>Адреса:</b> Shell, Р-24, Кам'янець-Подільська міська громада, Кам’янець-Подільський район, Хмельницька область, 32370, Україна</div>`)[0];
+                popup_955f32dd907e7239f491933536616b40.setContent(html_d8c9a9c59ddbd8e79e4f77e36861ce29);
+            
+        
+
+        marker_6d6107701728ef8879adc210eb1ba8c8.bindPopup(popup_955f32dd907e7239f491933536616b40)
+        ;
+
+        
+    
+    
+            marker_6d6107701728ef8879adc210eb1ba8c8.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6d6107701728ef8879adc210eb1ba8c8.setIcon(icon_4d6afd91174f9067d114be2bb0f3767f);
+            
+    
+            var marker_30d1f3701606929cfdd89d112d11e2aa = L.marker(
+                [48.7085693, 26.5905409],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_dadc0ac40760bebd83b9fc791ed750b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99a7354f8cea1e1f90940916402c087b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c14a0a18b400115d501dce994c8941f0 = $(`<div id="html_c14a0a18b400115d501dce994c8941f0" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> БРСМ-Нафта (Кам'янець-Подільський)<br><b>Адреса:</b> БРСМ-Нафта, проспект Грушевського, Кам’янець-Подільський, Кам'янець-Подільська міська громада, Кам’янець-Подільський район, Хмельницька область, 32320, Україна</div>`)[0];
+                popup_99a7354f8cea1e1f90940916402c087b.setContent(html_c14a0a18b400115d501dce994c8941f0);
+            
+        
+
+        marker_30d1f3701606929cfdd89d112d11e2aa.bindPopup(popup_99a7354f8cea1e1f90940916402c087b)
+        ;
+
+        
+    
+    
+            marker_30d1f3701606929cfdd89d112d11e2aa.bindTooltip(
+                `<div>
+                     БРСМ-Нафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_30d1f3701606929cfdd89d112d11e2aa.setIcon(icon_dadc0ac40760bebd83b9fc791ed750b3);
+            
+    
+            var marker_18f5af0a6f196506202b9f19e7cc5f4e = L.marker(
+                [48.6776284, 26.5979882],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_07910141fdab9b34b5b41f1a930d0afe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc887b7bec3dd17eac31ab3dc26229f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0785bff545c12acac3108721fa661b81 = $(`<div id="html_0785bff545c12acac3108721fa661b81" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> SOCAR (Кам'янець-Подільський)<br><b>Адреса:</b> Socar, Привокзальна вулиця, Черьомушки, Кам’янець-Подільський, Кам'янець-Подільська міська громада, Кам’янець-Подільський район, Хмельницька область, 32307, Україна</div>`)[0];
+                popup_dc887b7bec3dd17eac31ab3dc26229f2.setContent(html_0785bff545c12acac3108721fa661b81);
+            
+        
+
+        marker_18f5af0a6f196506202b9f19e7cc5f4e.bindPopup(popup_dc887b7bec3dd17eac31ab3dc26229f2)
+        ;
+
+        
+    
+    
+            marker_18f5af0a6f196506202b9f19e7cc5f4e.bindTooltip(
+                `<div>
+                     SOCAR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18f5af0a6f196506202b9f19e7cc5f4e.setIcon(icon_07910141fdab9b34b5b41f1a930d0afe);
+            
+    
+            var marker_0827a26041636f3ae69d0fb2def46086 = L.marker(
+                [49.0225753, 26.3343705],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_9fb7a5580c14891cf22eb668c4552ce3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64efd30ec10fd85ec0eed5c9294a853e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f7dc8f36ad346773dca4ea1759560cc = $(`<div id="html_9f7dc8f36ad346773dca4ea1759560cc" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Avantage 7 (Кам'янець-Подільський)<br><b>Адреса:</b> Avantage 7, 4, Р-48, Чемерівці, Чемеровецька селищна громада, Кам’янець-Подільський район, Хмельницька область, 31609, Україна</div>`)[0];
+                popup_64efd30ec10fd85ec0eed5c9294a853e.setContent(html_9f7dc8f36ad346773dca4ea1759560cc);
+            
+        
+
+        marker_0827a26041636f3ae69d0fb2def46086.bindPopup(popup_64efd30ec10fd85ec0eed5c9294a853e)
+        ;
+
+        
+    
+    
+            marker_0827a26041636f3ae69d0fb2def46086.bindTooltip(
+                `<div>
+                     Avantage 7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0827a26041636f3ae69d0fb2def46086.setIcon(icon_9fb7a5580c14891cf22eb668c4552ce3);
+            
+    
+            var marker_697f3b7be36003e78cba918c6b882c5e = L.marker(
+                [48.7235011, 26.6001039],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_4bf88d16ee341c89fa3771030d7f9aea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6633c590968ef284777deb265b914367 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_afd693109816c35c21548eda08842b0e = $(`<div id="html_afd693109816c35c21548eda08842b0e" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Укрнафта (Кам'янець-Подільський)<br><b>Адреса:</b> Укрнафта, проспект Грушевського, Кам’янець-Подільський, Кам'янець-Подільська міська громада, Кам’янець-Подільський район, Хмельницька область, 32325, Україна</div>`)[0];
+                popup_6633c590968ef284777deb265b914367.setContent(html_afd693109816c35c21548eda08842b0e);
+            
+        
+
+        marker_697f3b7be36003e78cba918c6b882c5e.bindPopup(popup_6633c590968ef284777deb265b914367)
+        ;
+
+        
+    
+    
+            marker_697f3b7be36003e78cba918c6b882c5e.bindTooltip(
+                `<div>
+                     Укрнафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_697f3b7be36003e78cba918c6b882c5e.setIcon(icon_4bf88d16ee341c89fa3771030d7f9aea);
+            
+    
+            var marker_40f00923bbcda6d3688f1d2c70da02a0 = L.marker(
+                [50.1624508, 27.0367368],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_dcaae53be07fbdb119dcd64e2896c05f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64c49b746f27810ccccdc7bff316d969 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db3fce4f609129cb79bdf0e81f51c4a8 = $(`<div id="html_db3fce4f609129cb79bdf0e81f51c4a8" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> Укрнафта (Шепетівка)<br><b>Адреса:</b> Укрнафта, вулиця Митрополита Шептицького, Шепетівка, Шепетівська міська громада, Шепетівський район, Хмельницька область, 30405, Україна</div>`)[0];
+                popup_64c49b746f27810ccccdc7bff316d969.setContent(html_db3fce4f609129cb79bdf0e81f51c4a8);
+            
+        
+
+        marker_40f00923bbcda6d3688f1d2c70da02a0.bindPopup(popup_64c49b746f27810ccccdc7bff316d969)
+        ;
+
+        
+    
+    
+            marker_40f00923bbcda6d3688f1d2c70da02a0.bindTooltip(
+                `<div>
+                     Укрнафта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40f00923bbcda6d3688f1d2c70da02a0.setIcon(icon_dcaae53be07fbdb119dcd64e2896c05f);
+            
+    
+            var marker_d1457b4042e0bc7f39f150f4fa4134fa = L.marker(
+                [50.3223869, 26.6624632],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_c017cffc6532bbfcb92cd570c0da4600 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38185cb7bfec478ab83f33a0bcab2a3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7c5f60f74fd0f99ba39ed25bd6dfb035 = $(`<div id="html_7c5f60f74fd0f99ba39ed25bd6dfb035" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> ОККО (Нетішин)<br><b>Адреса:</b> ОККО, вулиця Енергетиків, Нетішин, Нетішинська міська громада, Шепетівський район, Хмельницька область, 30100, Україна</div>`)[0];
+                popup_38185cb7bfec478ab83f33a0bcab2a3f.setContent(html_7c5f60f74fd0f99ba39ed25bd6dfb035);
+            
+        
+
+        marker_d1457b4042e0bc7f39f150f4fa4134fa.bindPopup(popup_38185cb7bfec478ab83f33a0bcab2a3f)
+        ;
+
+        
+    
+    
+            marker_d1457b4042e0bc7f39f150f4fa4134fa.bindTooltip(
+                `<div>
+                     ОККО
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1457b4042e0bc7f39f150f4fa4134fa.setIcon(icon_c017cffc6532bbfcb92cd570c0da4600);
+            
+    
+            var marker_69edfabe4725b27582da4b1813fd8837 = L.marker(
+                [49.7386225, 27.2182049],
+                {
+}
+            ).addTo(map_0ddf6da82cf00ec8c400a7779922e5ac);
+        
+    
+            var icon_aad0e6e665f5dc8e07f11d204bc859d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6a134f09bbc3cfdf011e44cf6303633 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2049106fbc8f50f0676e0b529ad2efa7 = $(`<div id="html_2049106fbc8f50f0676e0b529ad2efa7" style="width: 100.0%; height: 100.0%;"><b>Бренд:</b> WOG (Старокостянтинів)<br><b>Адреса:</b> WOG, 127, Н-03, Заслуч, Старокостянтинів, Старокостянтинівська міська громада, Хмельницький район, Хмельницька область, 31100, Україна</div>`)[0];
+                popup_a6a134f09bbc3cfdf011e44cf6303633.setContent(html_2049106fbc8f50f0676e0b529ad2efa7);
+            
+        
+
+        marker_69edfabe4725b27582da4b1813fd8837.bindPopup(popup_a6a134f09bbc3cfdf011e44cf6303633)
+        ;
+
+        
+    
+    
+            marker_69edfabe4725b27582da4b1813fd8837.bindTooltip(
+                `<div>
+                     WOG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69edfabe4725b27582da4b1813fd8837.setIcon(icon_aad0e6e665f5dc8e07f11d204bc859d3);
+            
+</script>
+</html>
