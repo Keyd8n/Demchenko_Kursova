@@ -19,8 +19,10 @@ TODAY_DATE = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
 TODAY_DATE_STR = TODAY_DATE.strftime("%Y-%m-%d") 
 
 AZS_BRANDS = [
-    "ОККО", "WOG", "Shell", "UPG", 
-    "БРСМ-Нафта", "AMIC Energy", "SOCAR", "Укрнафта"
+    "ОККО", "WOG", 
+    "Shell", "Авантаж 7",
+    "Укрнафта", "Авіас", "VST", 
+    "Укр-Петроль", "Маркет", "AMIC"
 ]
 MINFIN_HEADERS = ['Brand', 'Drop_Col_2', 'A-95_plus', 'A-95', 'A-92', 'DP', 'GAS']
 
@@ -57,7 +59,6 @@ def parse_price(value):
     if not isinstance(value, str):
         return None
     try:
-        # Видаляємо пробіли, грн/л та замінюємо кому на крапку
         cleaned = value.strip().split()[0].replace(',', '.').replace('\xa0', '')
         if not cleaned: return None
         return float(cleaned)
